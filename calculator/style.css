@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc{
+    width: 300px;
+    height: 500px;
+    box-shadow: 4px 4px 30px rgb(233, 224, 224);
+    border-radius: 12px;
+    background: rgb(53, 48, 48);
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    height: 150px;
+    border:none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: aliceblue;
+    background: black;
+    text-align: right;
+    pointer-events: none; /*it is for making the screen unclickable so that no one change the things by selcting */
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button{
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid black;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-yellow{
+    background: rgb(223, 185, 16);
+    color: white;
+}
+
+.btn-gray{
+    background: rgb(119, 119, 112);
+    color: white;
+}
+
+.btn-clear{
+    background: rgb(230, 7, 7);
+    color: white;
+}
+
+.btn-equal{
+    background: rgb(119, 119, 112);
+    color: white;
+}
